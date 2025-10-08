@@ -9,9 +9,4 @@ app.use(cookieParser)
 
 app.use('/auth',authRoutes)
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');
-});
-
-
 module.exports = app;
