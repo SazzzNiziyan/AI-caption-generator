@@ -10,7 +10,7 @@ async function createPostController(req,res){
     const caption = await generateCaption(base64Image);
 
     res.json({
-        capiton
+        caption
     })
 } 
 
