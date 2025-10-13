@@ -9,7 +9,7 @@ async function registerController(req,res){
         username
     })
 
-    if(exisitngUser){
+    if(exisitingUser){
         return res.status(409).json({
             message:"user already exists"
         })
