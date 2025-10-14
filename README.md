@@ -64,6 +64,6 @@ This project is licensed under the MIT License.
 - AI model integration powered by open-source libraries
 - Inspired by the need for quick, creative social media content
 
----
+----
 
 **Author:** [SazzzNiziyan](https://github.com/SazzzNiziyan)
