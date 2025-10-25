@@ -1,0 +1,20 @@
+const { response } = require("express");
+var ImageKit = require("imagekit");
+
+var imagekit = new ImageKit({
+    publicKey : process.env.IMAGEKIT_PUBLIC_KEY,
+    privateKey : process.env.IMAGEKIT_PRIVATE_KEY,
+    urlEndpoint : process.env.URL_ENDPOINT
+});
+
+async function uploadFile(file, filename){
+
+    const reaponse = await imagekit.upload({
+        file: file,
+        fileName: filename
+    })
+
+    return response
+}
+
+module.exports = uploadFile;
