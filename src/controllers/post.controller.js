@@ -3,8 +3,8 @@ const generateCaption = require("../service/Ai.service");
 const uploadFile = require("../service/storage.service");
 const { v4: uuidv4 } = require('uuid');
 
-async function createPostController(req,res){
-    const file = req.file; 
+async function createPostController(req, res) {
+    const file = req.file;
     console.log("File received", file);
 
     const base64Image = new Buffer.from(file.buffer).toString('base64');
@@ -27,7 +27,7 @@ async function createPostController(req,res){
     //     caption,
     //     result
     // })
-} 
+}
 
 
 module.exports = {
